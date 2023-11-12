@@ -1,0 +1,482 @@
+/* +=+=+=+=+=+=+= Important Link Here +=+=+=+=+ */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ++++++++++++ Common CSS Part Start ++++++++++ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+body{
+    background: var(--brand_clr);
+}
+:root{
+    --secrdry_clr : #FBD784;
+    --primary_clr: #FFA343;
+    --brand_clr: #000000;
+    --white_clr: #FFFFFF;
+    --opensans_font: 'Open Sans', sans-serif;
+}
+
+/* ============ Common CSS Part End =========== */
+/* ++++++++++++ Top Button CSS Part Start ++++++++++ */
+.top_button{
+    width: 40px;
+    height: 40px;
+    background: var(--brand_clr);
+    border-radius: 10px;
+    font-size: 24px;
+    color: var(--primary_clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all linear;
+    border: 1px solid var(--secrdry_clr);
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 999;
+    visibility: hidden;
+    opacity:0;
+}
+ .top_button:hover{
+    background: var(--primary_clr);
+    color: var(--brand_clr);
+    cursor: pointer;
+}
+.go_top{
+    visibility: visible;
+    opacity: 1;
+    animation: came_top 1s;
+}
+@keyframes came_top{
+    from{
+        bottom: -10%;
+    }
+    to{
+        bottom: 10%;
+    }
+}
+/* ============ Top Button CSS Part End =========== */
+/* ++++++++++++ Menu CSS Part Start ++++++++++ */
+.main_menu{
+    width: 100%;
+    /* height: 1196px; */
+    background: var(--brand_clr);
+    /* background-size: cover; */
+    z-index: 999;
+}
+.main_menu .nav-item{
+    padding-top: 27px;
+}
+.main_menu .navbar-nav{
+    display: flex;
+    gap: 24px;
+}
+.main_menu .navbar-nav{
+    padding-left: 80px;
+}
+.main_menu .dropdown-menu{
+    background: var(--brand_clr);
+}
+.main_menu li {
+    position: relative;
+}
+.main_menu li::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: var(--secrdry_clr);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.4s all linear;
+}
+.main_menu li:hover::after{
+    width: 100%;
+}
+.main_menu ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--opensans_font);
+    color:  var(--white_clr) !important;
+    padding: 0 15px !important;
+    position: relative;
+    transition: 0.4s all linear;
+}
+.main_menu ul li a:hover{
+    color: var(--primary_clr) !important;
+}
+.nav_icon{
+    color: var(--white_clr);
+}
+.sticky{
+    padding: 41px 0;
+    height: 50px;
+    background: var(--brand_clr);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* ============ Menu CSS Part End =========== */
+/* ++++++++++++ Banner CSS Part Start ++++++++++ */
+#Banner_Part{
+    width: 100%;
+    height: 1196px;
+    background: url(../images/banner_bg.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+.banner_txt{
+    padding-top: 289px;
+}
+.banner_txt p{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--primary_clr);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.banner_txt h2{
+    font-size: 56px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.banner_txt h3{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    line-height: 50px;
+    letter-spacing: 6px;
+}
+
+/* ============ Banner CSS Part End =========== */
+/* ++++++++++++ About CSS Part Start ++++++++++ */
+#about_part{
+    padding-top: 30px;
+    margin-bottom: 200px;
+}
+.about_row{
+    display: flex;
+    gap: 200px;
+}
+.About_pic img{
+    width: 512px;
+    height: 575px;
+    border-radius: 10px;
+}
+.about_txt h4{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--secrdry_clr);
+    letter-spacing: 6px;
+    padding-top: 30px;
+}
+.about_txt h2{
+    width: 506px;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about_txt p{
+    width: 587px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    text-transform: uppercase;
+    line-height: 32px;
+}
+.about_txt a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--secrdry_clr);
+    text-transform: uppercase;
+    padding-top: 30px;
+    transition: all linear .2s;
+}
+.about_txt a:hover{
+    color: var(--white_clr);
+}
+/* ============ About CSS Part End =========== */
+/* ++++++++++++ Others CSS Part Start ++++++++++ */
+#others_part{
+    padding-bottom: 100px;
+}
+.othrs_pic{
+    position: relative;
+}
+.othrs_txt h4{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--secrdry_clr);
+    top: 51%;
+    left: 47%;
+}
+.othrs_txt h2{
+    width: 887px;
+    position: absolute;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top: 55%;
+    left: 13%;
+}
+.othrs_txt p{
+    width: 1092px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 32px;
+    top: 78%;
+    left: 1%;
+}
+.othrs_txt h5{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--secrdry_clr);
+    text-transform: uppercase;
+    top: 93%;
+    left: 44%;
+    transition: all linear .2s;
+}
+.othrs_txt h5:hover{
+    color: var(--white_clr);
+}
+/* ============ Others CSS Part End =========== */
+/* ++++++++++++ Culture CSS Part Start ++++++++++ */
+#culture_part{
+    padding-bottom: 100px;
+}
+.cultr_row{
+    display: flex;
+    gap: 20px;
+}
+.cultre_txt h4{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--secrdry_clr);
+    letter-spacing: 5px;
+}
+.cultre_txt h2{
+    width: 660px;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+.cultre_txt p{
+    width: 780px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+.cultre_txt h5{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--secrdry_clr);
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.cultre_txt h5:hover{
+    color: var(--white_clr);
+}
+.cultre_pic img{
+    height: 426px;
+    border-radius: 5px;
+}
+/* ============ Culture CSS Part End =========== */
+/* ++++++++++++ Get started CSS Part Start ++++++++++ */
+#get_started{
+    padding-bottom: 100px;
+}
+.main_get{
+    display: flex;
+    justify-content: space-between;
+}
+.get_logo img{
+    width: 140px;
+}
+.get_txt h3{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    margin-top: 15px;
+    margin-left: 506px;
+}
+.get_button a{
+    width: 232px;
+    height: 59px;
+    border-radius: 10px;
+    background: var(--primary_clr);
+    font-size: 17px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--brand_clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .4s;
+}
+.get_button a:hover{
+    background: transparent;
+    color: var(--white_clr);
+    border: 2px solid var(--primary_clr);
+}
+/* ============ Get started CSS Part End =========== */
+/* ++++++++++++ Footer CSS Part Start ++++++++++ */
+#footer_part{
+    padding-bottom: 100px;
+}
+.txt_row{
+    display: flex;
+    justify-content: space-between;
+}
+.txt_col_1 h2{
+    width: 405px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    line-height: 50px;
+}
+.txt_col_1 p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.social_icon{
+    margin-top: 40px;
+}
+.social_icon ul{
+    display: flex;
+    justify-content: start;
+    gap: 28px; 
+}
+.social_icon ul li a{
+    font-size: 24px;
+    color:var(--secrdry_clr);
+    transition: all linear 0.3s;
+}
+.social_icon ul li a:hover{
+    color: var(--white_clr);
+}
+.txt_col_2 h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--opensans_font);
+    color: var(--secrdry_clr);
+    margin-bottom: 15px;
+    transition: all linear 0.1s;
+    position: relative;
+}
+.txt_col_2 h3::after{
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    height: 2px;
+    width: 0%;
+    background-color:var(--secrdry_clr);
+    transition: all linear .3s;
+}
+.txt_col_2 h3:hover::after{
+    width: 80%;
+}
+.txt_col_2 h3:hover{
+    color: var(--white_clr);
+}
+.txt_col_2 p{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: var(--opensans_font);
+    color: var(--white_clr);
+    line-height: 35px;
+    transition: all linear 0.3s;
+    position: relative;
+}
+.txt_col_2 p::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    height: 2px;
+    width: 0%;
+    background-color:var(--primary_clr);
+    transition: all linear .3s;
+}
+.txt_col_2 p:hover::after{
+    width: 80%;
+}
+.txt_col_2 p:hover{
+    color: var(--primary_clr);
+}
+.cpy_rght p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--opensans_font);
+    color: #636363;
+    text-align: center;
+    margin-top: 80px;
+}
+/* ============ Footer CSS Part End =========== */
+/* ++++++++++++ Footer CSS Part Start ++++++++++ */
+
+/* ============ Footer CSS Part End =========== */

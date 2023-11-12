@@ -1,0 +1,170 @@
+@media (max-width: 575.98px){
+/* ======common css start======= */
+.common_heading h3{
+    font-size: 18px ;
+}
+.common_heading p{
+    font-size: 12px ;
+    margin-bottom: 30px;
+}
+.common_heading p span{
+    display: inline;
+}
+:root{
+    --secrdry_clr : #FBD784;
+    --primary_clr: #FFA343;
+    --brand_clr: #000000;
+    --white_clr: #FFFFFF;
+    --opensans_font: 'Open Sans', sans-serif;
+}
+/* -------common css End------- */
+/* ------- Navbar Part Start-------- */
+.main_menu{
+    width: 100%;
+    background: var(--brand_clr);
+    z-index: 999;
+}
+.main_menu .navbar-nav{
+    display: flex;
+    gap: 2px;
+}
+/* ------- Navbar Part End----------- */
+/* ------- Banner Part Start-------- */
+.banner_txt p {
+    margin-left: 29px;
+	font-size: 9px;
+}
+.banner_txt h2 {
+    margin-left: 29px;
+	font-size: 33px;
+}
+.banner_txt h3 {
+    margin-left: 29px;
+	font-size: 29px;
+	line-height: 35px;
+	letter-spacing: 7px;
+}
+/* ------- Banner Part End----------- */
+/* ------- About Part Start-------- */
+.about_txt h4 {
+	font-size: 14px;
+    margin-left: -173px;
+}
+.about_txt h2 {
+	width: 279px;
+	font-size: 20px;
+	margin-left: -173px;
+}
+.about_txt p {
+    width: 250px;
+	font-size: 9px;
+    margin-left: -173px;
+}
+.about_txt a {
+	font-size: 11px;
+    margin-left: -173px;
+}
+/* ------- About Part End----------- */
+/* ------- Others Part Start-------- */
+.othrs_txt h4 {
+	font-size: 9px;
+    top: 41%;
+    left: 43%;
+}
+.othrs_txt h2 {
+	width: 240px;
+	font-size: 14px;
+	top: 60%;
+	left: 15%;
+}
+.othrs_txt p {
+	width: 270px;
+	font-size: 5px;
+	letter-spacing: 1px;
+	line-height: 15px;
+	top: 79%;
+	left: 5%;
+}
+.othrs_txt h5 {
+	font-size: 7px;
+	top: 116%;
+	left: 41%;
+}
+/* ------- Others Part End----------- */
+/* ------- Culture Part Start-------- */
+.cultre_txt h4 {
+	font-size: 11px;
+    margin-left: 45px;
+}
+.cultre_txt h2 {
+	width: 238px;
+	font-size: 18px;
+	margin: 20px 30px;
+	text-align: center;
+}
+.cultre_txt p {
+	width: 280px;
+	font-size: 11px;
+	margin: 20px 8px;
+    text-align: center;
+}
+.cultre_txt h5 {
+	font-size: 9px;
+	margin: 20px 120px;
+}
+/* ------- Culture Part End----------- */
+/* ------- Lets Go Part Start-------- */
+.get_logo img {
+	width: 61px;
+}
+.get_txt h3 {
+	font-size: 12px;
+	margin-top: 15px;
+	margin-left: 9px;
+}
+.get_button a {
+	width: 87px;
+	height: 44px;
+	border-radius: 7px;
+	font-size: 13px;
+}
+/* ------- Lets Go Part End----------- */
+/* ------- Footer Part Start-------- */
+#footer_part {
+	padding-bottom: 70px;
+}
+.txt_col_1 h2 {
+	width: 81px;
+	font-size: 11px;
+	line-height: 33px;
+}
+.txt_col_2 h3 {
+	font-size: 12px;
+}
+.social_icon ul li a {
+	font-size: 0px;
+}
+.txt_col_1 p {
+	font-size: 10px;
+	margin-top: 90px;
+	margin-bottom: 0px;
+}
+.social_icon {
+	margin-top: 24px;
+}
+.social_icon ul {
+	gap: 19px;
+}
+.social_icon ul li a {
+	font-size: 18px;
+}
+.txt_col_2 p {
+	font-size: 8px;
+}
+.cpy_rght p {
+	font-size: 14px;
+	margin-top: 45px;
+}
+/* ------- Footer Part End----------- */
+
+}
